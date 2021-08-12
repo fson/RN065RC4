@@ -12,6 +12,10 @@ target 'RN065RC4' do
     :hermes_enabled => false
   )
 
+  pod 'EXUpdatesInterface', path: '../node_modules/expo-updates-interface/ios'
+  pod 'expo-dev-launcher', path: '../node_modules/expo-dev-launcher', :configurations => :debug
+  pod 'expo-dev-menu', path: '../node_modules/expo-dev-menu', :configurations => :debug
+
   target 'RN065RC4Tests' do
     inherit! :complete
     # Pods for testing

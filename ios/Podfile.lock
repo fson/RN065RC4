@@ -2,6 +2,38 @@ PODS:
   - boost-for-react-native (1.63.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
+  - expo-dev-client (0.4.7):
+    - expo-dev-launcher
+    - expo-dev-menu
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+  - expo-dev-launcher (0.6.7):
+    - expo-dev-launcher/Main (= 0.6.7)
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+    - React
+  - expo-dev-launcher/Main (0.6.7):
+    - expo-dev-launcher/Unsafe
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+    - React
+  - expo-dev-launcher/Unsafe (0.6.7):
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+    - React
+  - expo-dev-menu (0.7.7):
+    - expo-dev-menu-interface
+    - expo-dev-menu/Main (= 0.7.7)
+    - React
+  - expo-dev-menu-interface (0.3.4)
+  - expo-dev-menu/Main (0.7.7):
+    - expo-dev-menu-interface
+    - expo-dev-menu/Vendored
+    - React
+  - expo-dev-menu/Vendored (0.7.7):
+    - expo-dev-menu-interface
+    - React
+  - EXUpdatesInterface (0.2.2)
   - FBLazyVector (0.65.0-rc.4)
   - FBReactNativeSpec (0.65.0-rc.4):
     - RCT-Folly (= 2021.04.26.00)
@@ -339,6 +371,11 @@ PODS:
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - expo-dev-client (from `../node_modules/expo-dev-client`)
+  - expo-dev-launcher (from `../node_modules/expo-dev-launcher`)
+  - expo-dev-menu (from `../node_modules/expo-dev-menu`)
+  - expo-dev-menu-interface (from `../node_modules/expo-dev-menu-interface`)
+  - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - Flipper (= 0.93.0)
@@ -411,6 +448,16 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  expo-dev-client:
+    :path: "../node_modules/expo-dev-client"
+  expo-dev-launcher:
+    :path: "../node_modules/expo-dev-launcher"
+  expo-dev-menu:
+    :path: "../node_modules/expo-dev-menu"
+  expo-dev-menu-interface:
+    :path: "../node_modules/expo-dev-menu-interface"
+  EXUpdatesInterface:
+    :path: "../node_modules/expo-updates-interface/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -470,6 +517,11 @@ SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
+  expo-dev-client: 6deebc5a4525c8b39ffc090448ccd21e6b008e35
+  expo-dev-launcher: 08aa4331ca13f4a4698ef9c346c092942332cc25
+  expo-dev-menu: 751bb170ea1024c1ea8fa2c0c1f952360a68e48f
+  expo-dev-menu-interface: 145d352ba9edff66b0c1fb13773f0f0dd9d50afd
+  EXUpdatesInterface: b68e78b912a03fff7901a5f46ec200c45e3506a5
   FBLazyVector: a16d06343a1deae867ae52eff019c93c1f4ef82e
   FBReactNativeSpec: 7fc77abf6d50cde5afbbe73d5a18570409557b84
   Flipper: b1fddf9a17c32097b2b4c806ad158b2f36bb2692
@@ -511,6 +563,6 @@ SPEC CHECKSUMS:
   Yoga: 3cd4ce8fb888448497bed1c8f26369ad2c016a9c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f273a247a02c43e4c0aabdbf80c605e4ad4bb2e4
+PODFILE CHECKSUM: bbdaad63197e4526fd501604e0cd67481ed9589a
 
 COCOAPODS: 1.10.1
